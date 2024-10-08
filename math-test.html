@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Math Test</title>
+    <style>
+        body 
+        h1 {text-align: center;
+        }
+        .question {margin-bottom: 20px;
+        }
+        .question p {font-weight: bold;
+        }
+        .choices {margin-left: 20px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Math Test</h1>
+
+    <form id="mathTest">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is 5 + 3?</p>
+            <div class="choices">
+                <label><input type="radio" name="q1" value="6"> 6</label><br>
+                <label><input type="radio" name="q1" value="8"> 8</label><br>
+                <label><input type="radio" name="q1" value="9"> 9</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. What is 12 - 4?</p>
+            <div class="choices">
+                <label><input type="radio" name="q2" value="8"> 8</label><br>
+                <label><input type="radio" name="q2" value="6"> 6</label><br>
+                <label><input type="radio" name="q2" value="9"> 9</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. What is 6 × 7?</p>
+            <div class="choices">
+                <label><input type="radio" name="q3" value="42"> 42</label><br>
+                <label><input type="radio" name="q3" value="36"> 36</label><br>
+                <label><input type="radio" name="q3" value="49"> 49</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. What is 24 ÷ 8?</p>
+            <div class="choices">
+                <label><input type="radio" name="q4" value="2"> 2</label><br>
+                <label><input type="radio" name="q4" value="3"> 3</label><br>
+                <label><input type="radio" name="q4" value="4"> 4</label>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" class="submit-btn" onclick="checkanswers()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function checkanswers() {
+            const correctanswers = {
+                q1: '8',
+                q2: '8',
+                q3: '42',
+                q4: '3'
+            };
+    </script>
+  </body>
+</html>
