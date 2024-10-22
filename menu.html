@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,7 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            height: 100vh;
             margin: 0;
         }
 
@@ -18,7 +19,7 @@
             display: flex;
             gap: 20px;
         }
-        
+
         .menu {
             width: 400px;
             height: 550px;
@@ -26,18 +27,16 @@
             margin: 20px;
             border: 2px solid #ccc;
             border-radius: 10px;
-            background: url(<img src="Web_Stuff/oscar-sutton-yihlaRCCvd4-unsplash.jpg"/>) no-repeat center center;
+            background: img src="Web_Stuff/oscar-sutton-yihlaRCCvd4-unsplash.jpg" repeat center;
             background-size: cover;
-            background-color: #fff;
-;
-            box-shadow: 0 4px 8px (0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
         }
 
         .menu h2 {
             text-align: center;
-            color: #333;
-            background: url(<img src="Web_Stuff/oscar-sutton-yihlaRCCvd4-unsplash.jpg"/>) no-repeat center center;
-            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
         }
 
         .menu ul {
@@ -46,9 +45,9 @@
         }
 
         .menu ul li {
-            margin: 10 0;
-            padding: 10;
-            border-bottom: 1 solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .menu ul li:last-child {
@@ -97,5 +96,4 @@
     </div>
 
 </body>
-  <p><a href="/index.html" target-"blank">To Main Page</a></p>
 </html>
