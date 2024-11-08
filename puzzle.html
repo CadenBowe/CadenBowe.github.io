@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Layout</title>
+  <style>
+    /* Main grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      justify-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Flex container */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      width: 300px;
+    }
+
+    /* Flex items */
+    .flex-item {
+      width: 50px;
+      height: 50px;
+      background-color: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    /* Header and footer styles */
+    .header, .footer {
+      font-size: 1.5em;
+      color: darkslateblue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- Header with name and butterfly text -->
+    <div class="header">
+      <p>Your Name</p>
+      <p>Butterflies</p>
+    </div>
+
+    <!-- Flex container with 17 spots -->
+    <div class="flex-container">
+      <!-- Create 17 flex items -->
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+      <div class="flex-item">16</div>
+      <div class="flex-item">17</div>
+    </div>
+
+    <!-- Footer with completion date -->
+    <div class="footer">
+      <p>Completed on: [Your Date Here]</p>
+    </div>
+  </div>
+
+</body>
+</html>
