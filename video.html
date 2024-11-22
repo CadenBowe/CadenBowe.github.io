@@ -1,0 +1,144 @@
+# Creating a basic HTML file with the tutorial content written in HTML format
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Embed a Video into a Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #0078D7;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0078D7;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #0078D7;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How to Embed a Video into a Website</h1>
+    </header>
+    <main>
+        <h2>Step 1: Choose a Video Hosting Service</h2>
+        <ol>
+            <li>Identify the video you want to embed.</li>
+            <li>Ensure the video is publicly accessible or has the necessary permissions for sharing.</li>
+        </ol>
+
+        <h2>Step 2: Locate the Embed Code</h2>
+        <p><strong>For YouTube:</strong></p>
+        <ol>
+            <li>Go to the video on YouTube.</li>
+            <li>Click on the <strong>Share</strong> button below the video.</li>
+            <li>Select <strong>Embed</strong> from the sharing options.</li>
+            <li>Copy the HTML embed code.</li>
+        </ol>
+        <p><strong>For Vimeo:</strong></p>
+        <ol>
+            <li>Open the video on Vimeo.</li>
+            <li>Click the <strong>Share</strong> button (usually a paper airplane icon).</li>
+            <li>Copy the provided embed code from the <strong>Embed</strong> section.</li>
+        </ol>
+
+        <h2>Step 3: Customize the Embed Code (Optional)</h2>
+        <p>Modify the embed code as needed. Example:</p>
+        <pre><code>&lt;iframe 
+    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&controls=0" 
+    width="560" 
+    height="315" 
+    frameborder="0" 
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+
+        <h2>Step 4: Add the Embed Code to Your Website</h2>
+        <ol>
+            <li>Open your website's HTML file or CMS editor.</li>
+            <li>Navigate to the section where you want to place the video.</li>
+            <li>Paste the embed code:</li>
+        </ol>
+        <pre><code>&lt;iframe 
+    src="https://www.youtube.com/embed/VIDEO_ID" 
+    width="560" 
+    height="315" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+
+        <h2>Step 5: Save and Test</h2>
+        <ol>
+            <li>Save your changes to the HTML file or CMS editor.</li>
+            <li>Open the website in a browser.</li>
+            <li>Verify the video is visible and functioning as expected.</li>
+        </ol>
+
+        <h2>Tips for Best Practices</h2>
+        <ul>
+            <li><strong>Responsive Design:</strong> Use this CSS rule to ensure the video scales well on mobile devices:</li>
+            <pre><code>iframe {
+    width: 100%;
+    height: auto;
+}</code></pre>
+            <li><strong>Optimize Loading:</strong> Add the <code>loading="lazy"</code> attribute for faster page loads:</li>
+            <pre><code>&lt;iframe 
+    src="https://www.youtube.com/embed/VIDEO_ID" 
+    width="560" 
+    height="315" 
+    frameborder="0" 
+    loading="lazy" 
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2024 Embedding Tutorial Guide</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Save the content to an HTML file
+file_path = "/mnt/data/embedding_video_tutorial.html"
+with open(file_path, "w") as file:
+    file.write(html_content)
+
+file_path
