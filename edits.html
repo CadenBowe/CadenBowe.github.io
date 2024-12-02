@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Frame</title>
     <style>
+                .dinosaur-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white; /* Background to highlight the shadow */
+            height: 100vh; /* Full viewport height */
+        }
+        .dinosaur-container img {
+            filter: invert(1); /* Inverts the colors */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+            border-radius: 10px; /* Optional: Rounds the corners slightly */
+        }
+        
         .butterfly-container {
             display: flex;
             justify-content: center;
@@ -40,6 +53,10 @@
     </style>
 </head>
 <body>
+    <div class="dinosaur-container">
+        <img src="dinosaur.png" alt="Dinosaur" width="300">
+    </div>
+
     <div class="butterfly-container">
         <img src="Web_Stuff/5.4_images-assignment/butterfly.jpg" alt="Butterfly">
     </div>
