@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Frame</title>
     <style>
+        .butterfly-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px; /* Adjust width as needed */
+            height: auto;
+            background-color: black; /* Optional background to highlight inverted colors */
+            overflow: hidden; /* Ensures the image stays within bounds */
+            border: 5px solid white; /* Optional border for contrast */
+        }
+        .butterfly-container img {
+            width: 100%;
+            filter: invert(1);
+        }
+
         .penguin-container {
             display: flex;
             justify-content: center;
@@ -24,6 +39,10 @@
     </style>
 </head>
 <body>
+    <div class="butterfly-container">
+        <img src="Web_Stuff/5.4_images-assignment/butterfly.jpg" alt="Butterfly">
+    </div>
+
     <div class="penguin-container">
         <img src="Web_Stuff/5.4_images-assignment/penguins.jpg" alt="Penguins">
     </div>
