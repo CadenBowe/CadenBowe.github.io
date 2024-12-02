@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edits</title>
     <style>
+                .stage-container {
+            position: relative;
+            width: 400px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .stage-container img {
+            width: 100%;
+            filter: blur(8px); /* Adds the blur effect */
+        }
+
+        .stage-container .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Arial', sans-serif;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
         .seagull-container {
             display: flex;
             justify-content: center;
@@ -67,6 +90,11 @@
     </style>
 </head>
 <body>
+    <div class="stage-container">
+        <img src="Web_Stuff/5.4_images-assignment/theater_stage.jpg" alt="Theater Stage">
+        <div class="text-overlay">Presenting</div>
+    </div>
+
     <div class="seagull-container">
         <img src="Web_Stuff/5.4_images-assignment/seagull.png" alt="Seagull">
     </div>
