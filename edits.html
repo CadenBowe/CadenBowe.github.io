@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Frame</title>
     <style>
+                .seagull-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px; /* Adjust as needed */
+            height: 400px; /* Adjust as needed */
+            background: transparent;
+        }
+        .seagull-container img {
+            width: 100%; /* Ensures the image scales */
+            height: auto;
+        }
+
                 .dinosaur-container {
             display: flex;
             justify-content: center;
@@ -53,6 +66,10 @@
     </style>
 </head>
 <body>
+    <div class="seagull-container">
+        <img src="seagull.png" alt="Seagull">
+    </div>
+
     <div class="dinosaur-container">
         <img src="Web_Stuff/5.4_images-assignment/dinosaur.png" alt="Dinosaur" width="300">
     </div>
