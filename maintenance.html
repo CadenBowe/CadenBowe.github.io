@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motorcycle maintenance tips and guides to keep your bike in top condition.">
+    <title>Motorcycle Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Motorcycle World</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">Motorcycle Models</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="maintenance.html">Maintenance Tips</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="maintenance-intro">
+            <h1>Motorcycle Maintenance Tips</h1>
+            <p>Regular maintenance is key to ensuring your motorcycle runs smoothly and lasts longer. Explore our tips and guides below.</p>
+        </section>
+
+        <section class="maintenance-form">
+            <h2>Request a Maintenance Checklist</h2>
+            <form action="submit_maintenance_form.html" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="bike-type">Motorcycle Type:</label>
+                <select id="bike-type" name="bike-type" required>
+                    <option value="cruiser">Cruiser</option>
+                    <option value="sportbike">Sportbike</option>
+                    <option value="touring">Touring</option>
+                    <option value="dirt">Dirt Bike</option>
+                    <option value="scooter">Scooter</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Add any specific details or requests..." rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Motorcycle World. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
